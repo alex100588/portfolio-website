@@ -85,6 +85,7 @@ section{
 .home-img img{
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
+    border-radius: 30%;
 }
 
 @keyframes floatImage{
@@ -203,6 +204,16 @@ span{
     gap: 2em;
 }
 
+.services-container p{
+    height: 53px;
+    overflow: hidden;
+}
+
+.showMore{
+    height: 150px !important;
+    max-height: 100px !important;
+}
+
 .services-container .sevices-box{
     flex: 1 1 30rem;
     background: var(--second-color);
@@ -238,6 +249,7 @@ span{
   
 }
 
+
 .portfolio{
     background: var(--second-color);
 }
@@ -245,6 +257,7 @@ span{
 .portfolio h2{
     margin-bottom: 4rem;
 }
+
 
 
 .portfolio-container{
@@ -277,7 +290,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 4, .4), rgb(29, 29, 126));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,12 +409,23 @@ span{
 }
 
 @media (max-width: 991px){
+
+    .home{
+        min-height: 41vh;
+    }
+
+    .about{
+        min-height: 37vh;
+        padding-top: 0px;
+    }
+
     .header{
         padding: 2rem 3%;
     }
 
     section{
         padding: 10rem 3% 2rem;
+        min-height: 43vh;
     }
 
     /* .services{
@@ -410,6 +434,7 @@ span{
 
     .portfolio{
         padding-bottom: 7rem;
+        min-height: 55vh;
     }
 
     .contact{
@@ -449,6 +474,7 @@ span{
     }
 
     .home{
+        text-align: center;
         flex-direction: column;
     }
 
@@ -467,20 +493,44 @@ span{
 
     .about {
         flex-direction: column-reverse;
-        
+        text-align: center;
+    }
+
+    .about h2{
+        text-align: center;
+        margin-top: 14px;
+        margin-bottom: 8px;
     }
 
     .about-img img{
         width: 70vw;
         margin-top: 4rem;
     }
+    
+    .services {
+        padding: 3rem 3% 2rem;
+    }
+    .services-container p {
+        height: 45px;
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 
     .services h2{
         margin-bottom: 3rem;
     }
 
+    .portfolio{
+        padding: 5rem 3% 2rem;
+    }
+
     .portfolio h2{
         margin-bottom: 3rem;
+    }
+
+    .contact{
+        padding: 4rem 3% 2rem;
     }
 
     
