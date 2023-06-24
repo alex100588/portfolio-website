@@ -60,3 +60,16 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 })
+
+
+
+let servicesExapnd = document.querySelectorAll('.btn')
+let expand = document.querySelectorAll('.test')
+
+servicesExapnd.forEach((but) =>{
+    // but.addEventListener('click',(e)=> console.log(e.target))
+    console.log(but.previousElementSibling);
+    but.addEventListener('click', function(e){
+        but.previousElementSibling.classList.toggle('showMore')
+    })
+})
